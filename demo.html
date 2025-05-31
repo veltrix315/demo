@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>PVP Siddhartha Institute of Technology</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://pvpsitresults.com/assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <script> var base_url = "https://pvpsitresults.com/"; </script>
+
+  <style>
+    .clear { clear: both; }
+    #resultMessage {
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+      color: rgb(0, 0, 0);
+      display: none;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="headerbg">
+    <div id="headerblank">
+      <div id="header">
+        <div id="logo">
+          <img src="https://pvpsitresults.com/assets/images/logo.jpg" style="width:78px;">
+        </div>
+        <div id="collegename">
+          <b> PVP Siddhartha Institute of Technology </b>
+          <br><br>
+          <span class="collegenametagline">( Autonomous )<br></span>
+          <span class="address">
+            * Approved by AICTE * Permanently affiliated by JNTUK *<br>
+            * Accredited by NAAC and All B.Tech programs Accredited by NBA * Kanuru, Vijayawada, Andhra Pradesh.<br>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contentbg">
+    <div id="contentblank">
+      <div id="content">
+        <div style="width:960px; margin: 30px auto;">
+          <div id="hallticketno">
+            <h5 style="color:#0099CC;font-size:18px; font-weight:bold; text-align:center;">
+              II B Tech II Semester Regular Examinations (PVP23) - May-2025
+            </h5>
+            <br>
+            <form onsubmit="showMessage(event)" class="cmxform form-horizontal tasi-form" style="text-align: center;">
+              <div style="width:270px; margin: 0 auto;">
+                <label>Hallticket No</label>
+                <input class="form-control" id="hallticket" name="hallticket" type="text" placeholder="Enter Hall Ticket Number" required>
+              </div>
+              <div style="margin-top: 20px;">
+                <button class="btn btn-success" type="submit">Submit</button>
+              </div>
+            </form>
+
+            <!-- Clear float and place message on next line -->
+            <div class="clear"></div>
+
+            <!-- Message below form -->
+            <div id="resultMessage">
+              DON'T WORRY FRIENDS RESULTS ARE NOT ANNOUNCED<br>
+              ENJOY YOUR HOLIDAYS
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footerbg">
+    <div id="footerblank" style="margin-top:20px;"></div>
+  </div>
+
+  <script>
+    function showMessage(event) {
+      event.preventDefault(); // Prevent form submission
+      document.getElementById("resultMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
